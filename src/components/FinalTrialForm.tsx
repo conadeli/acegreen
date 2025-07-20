@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CheckCircle, FileText } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const FinalTrialForm = () => {
   const [formData, setFormData] = useState({
@@ -21,8 +22,57 @@ const FinalTrialForm = () => {
       alert('필수 약관에 동의해주세요.');
       return;
     }
-    console.log('Final form submitted:', formData);
-    alert('무료체험 신청이 완료되었습니다. 빠른 시일 내에 연락드리겠습니다.');
+    
+    // EmailJS로 이메일 전송
+    const templateParams = {
+      to_email: 'your-email@gmail.com', // 여기에 받을 이메일 주소 입력
+      from_name: formData.name,
+      company: formData.company,
+      phone: formData.phone,
+      email: formData.email,
+      location: formData.location,
+      message: `
+무료체험 신청이 접수되었습니다.
+
+신청자 정보:
+- 성함: ${formData.name}
+- 업체명: ${formData.company}
+- 연락처: ${formData.phone}
+- 이메일: ${formData.email}
+- 지역: ${formData.location}
+
+약관 동의:
+- 이용약관 동의: ${formData.termsAccepted ? '동의' : '미동의'}
+- 개인정보 수집 동의: ${formData.privacyAccepted ? '동의' : '미동의'}
+
+신청일시: ${new Date().toLocaleString('ko-KR')}
+      `
+    };
+
+    // EmailJS 설정값들 (실제 값으로 교체 필요)
+    const serviceId = 'service_ya8xa52';  // 확인된 Service ID
+    const templateId = 'YOUR_TEMPLATE_ID';  // 여기에 Template ID 입력
+    const publicKey = 'YOUR_PUBLIC_KEY';    // 여기에 Public Key 입력
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('이메일 전송 성공:', response);
+        alert('무료체험 신청이 완료되었습니다. 빠른 시일 내에 연락드리겠습니다.');
+        // 폼 초기화
+        setFormData({
+          name: '',
+          company: '',
+          phone: '',
+          email: '',
+          location: '',
+          termsAccepted: false,
+          privacyAccepted: false
+        });
+      })
+      .catch((error) => {
+        console.error('이메일 전송 실패:', error);
+        alert('신청 중 오류가 발생했습니다. 다시 시도해주세요.');
+      });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
