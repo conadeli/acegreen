@@ -20,11 +20,10 @@ const Hero = () => {
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="text-center max-w-4xl mx-auto px-4 py-4">
           <h1 className="text-3xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight">
-            혁신적인 폐기물 처리 솔루션
+           7일 사용하고 맘에안들면 그냥 반환!
           </h1>
           <p className="text-lg md:text-2xl mb-6 md:mb-8 opacity-90 leading-relaxed">
-            환경을 생각하는 차세대 처리 장비로 효율적인 업무 환경을 만들어보세요
-          </p>
+           장사하시면서 음식물처리 고민되셨죠? 음식처리비용도 아끼고 최적의 환경도만들어보세요!          </p>
           <button 
             onClick={scrollToTrialForm}
             className="bg-orange-500 hover:bg-orange-600 px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
