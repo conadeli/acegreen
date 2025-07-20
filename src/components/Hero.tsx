@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <section className="relative h-[60vh] md:h-screen bg-gradient-to-br from-blue-600 to-blue-800 text-white">
       <div className="absolute inset-0">
         <img 
           src="/images/hero-bg.jpg"
@@ -18,16 +18,16 @@ const Hero = () => {
         />
       </div>
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <div className="text-center max-w-4xl mx-auto px-4 py-4">
+          <h1 className="text-3xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight">
             혁신적인 폐기물 처리 솔루션
           </h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90">
+          <p className="text-lg md:text-2xl mb-6 md:mb-8 opacity-90 leading-relaxed">
             환경을 생각하는 차세대 처리 장비로 효율적인 업무 환경을 만들어보세요
           </p>
           <button 
             onClick={scrollToTrialForm}
-            className="bg-orange-500 hover:bg-orange-600 px-8 py-4 text-xl font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="bg-orange-500 hover:bg-orange-600 px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             무료체험 신청하기
           </button>
