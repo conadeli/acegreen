@@ -64,7 +64,7 @@ const TrialHighlightSection = () => {
             <Star className="w-4 h-4 mr-2" />
             국내최초, 국내유일
           </div>
-          <h2 className="text-5xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
             가격은 내리고, 용량은 늘리고
           </h2>
           <p className="text-xl md:text-2xl text-gray-700 mb-2">
