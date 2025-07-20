@@ -25,7 +25,7 @@ const FinalTrialForm = () => {
     
     // EmailJS로 이메일 전송
     const templateParams = {
-      to_email: 'your-email@gmail.com', // 여기에 받을 이메일 주소 입력
+      to_email: 'conadeli@gmail.com',
       from_name: formData.name,
       company: formData.company,
       phone: formData.phone,
@@ -51,8 +51,8 @@ const FinalTrialForm = () => {
 
     // EmailJS 설정값들 (실제 값으로 교체 필요)
     const serviceId = 'service_ya8xa52';  // 확인된 Service ID
-    const templateId = 'YOUR_TEMPLATE_ID';  // 여기에 Template ID 입력
-    const publicKey = 'YOUR_PUBLIC_KEY';    // 여기에 Public Key 입력
+    const templateId = 'template_r4soido';
+    const publicKey = '4duuwgq4uCevA9Gh6';
 
     emailjs.send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {

@@ -6,27 +6,27 @@ const InstallationGallery = () => {
 
   // 25개의 이미지 배열
   const galleryImages = [
-    'https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/236705/pexels-photo-236705.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/3184464/pexels-photo-3184464.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181435/pexels-photo-1181435.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181450/pexels-photo-1181450.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181464/pexels-photo-1181464.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181468/pexels-photo-1181468.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181473/pexels-photo-1181473.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181477/pexels-photo-1181477.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/1181481/pexels-photo-1181481.jpeg?auto=compress&cs=tinysrgb&w=800'
+    '/images/gallery/install-01.jpg',
+    '/images/gallery/install-02.jpg',
+    '/images/gallery/install-03.jpg',
+    '/images/gallery/install-04.jpg',
+    '/images/gallery/install-05.jpg',
+    '/images/gallery/install-06.jpg',
+    '/images/gallery/install-07.jpg',
+    '/images/gallery/install-08.jpg',
+    '/images/gallery/install-09.jpg',
+    '/images/gallery/install-10.jpg',
+    '/images/gallery/install-11.jpg',
+    '/images/gallery/install-12.jpg',
+    '/images/gallery/install-13.jpg',
+    '/images/gallery/install-14.jpg',
+    '/images/gallery/install-15.jpg',
+    '/images/gallery/install-16.jpg',
+    '/images/gallery/install-17.jpg',
+    '/images/gallery/install-18.jpg',
+    '/images/gallery/install-19.jpg',
+    '/images/gallery/install-20.jpg',
+    '/images/gallery/install-21.jpg'
   ];
 
   // PC용 페이지 구성 (3x3 그리드)

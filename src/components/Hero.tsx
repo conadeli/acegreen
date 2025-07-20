@@ -12,7 +12,7 @@ const Hero = () => {
     <section className="relative h-screen bg-gradient-to-br from-blue-600 to-blue-800 text-white">
       <div className="absolute inset-0">
         <img 
-          src="https://images.pexels.com/photos/236705/pexels-photo-236705.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080"
+          src="/images/hero-bg.jpg"
           alt="산업장비"
           className="w-full h-full object-cover opacity-30"
         />

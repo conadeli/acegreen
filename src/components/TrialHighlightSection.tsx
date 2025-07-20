@@ -14,17 +14,17 @@ const TrialHighlightSection = () => {
   const images = [
     {
       id: 1,
-      image: 'https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/trial-highlight-1.jpg',
       alt: '소규모 업장 설치 사례'
     },
     {
       id: 2,
-      image: 'https://images.pexels.com/photos/236705/pexels-photo-236705.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/trial-highlight-2.jpg',
       alt: '대규모 업장 설치 사례'
     },
     {
       id: 3,
-      image: 'https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/trial-highlight-3.jpg',
       alt: '무료체험 진행 모습'
     }
   ];

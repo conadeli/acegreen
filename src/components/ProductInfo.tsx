@@ -7,26 +7,26 @@ const ProductInfo = () => {
     {
       id: 1,
       name: 'SB-100 소형처리기',
-      image: 'https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specs: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '/images/products/sb-100.jpg',
+      specs: '/images/products/sb-100-spec.jpg'
     },
     {
       id: 2,
       name: 'SB-200 중형처리기',
-      image: 'https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specs: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '/images/products/sb-200.jpg',
+      specs: '/images/products/sb-200-spec.jpg'
     },
     {
       id: 3,
       name: 'SB-300 고급처리기',
-      image: 'https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specs: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '/images/products/sb-300.jpg',
+      specs: '/images/products/sb-300-spec.jpg'
     },
     {
       id: 4,
       name: 'SB-400 프리미엄처리기',
-      image: 'https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specs: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '/images/products/sb-400.jpg',
+      specs: '/images/products/sb-400-spec.jpg'
     }
   ];
 
@@ -34,20 +34,20 @@ const ProductInfo = () => {
     {
       id: 1,
       name: 'LV-500 대형처리기',
-      image: 'https://images.pexels.com/photos/236705/pexels-photo-236705.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specs: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '/images/products/lv-500.jpg',
+      specs: '/images/products/lv-500-spec.jpg'
     },
     {
       id: 2,
       name: 'LV-1000 산업용처리기',
-      image: 'https://images.pexels.com/photos/236705/pexels-photo-236705.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specs: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '/images/products/lv-1000.jpg',
+      specs: '/images/products/lv-1000-spec.jpg'
     },
     {
       id: 3,
       name: 'LV-2000 초대형처리기',
-      image: 'https://images.pexels.com/photos/236705/pexels-photo-236705.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specs: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '/images/products/lv-2000.jpg',
+      specs: '/images/products/lv-2000-spec.jpg'
     }
   ];
 

@@ -11,10 +11,10 @@ const TrialTabs = () => {
   ];
 
   const tabContent = {
-    guide: 'https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    process: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    status: 'https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    apply: 'https://images.pexels.com/photos/3184464/pexels-photo-3184464.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    guide: '/images/trial-guide.jpg',
+    process: '/images/trial-process.jpg',
+    status: '/images/trial-status.jpg',
+    apply: '/images/trial-apply.jpg'
   };
 
   return (

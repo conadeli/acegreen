@@ -8,19 +8,19 @@ const InstallationStatus = () => {
     {
       id: 1,
       title: '강남구 음식점',
-      image: 'https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/installations/gangnam-restaurant.jpg',
       location: '서울 강남구'
     },
     {
       id: 2,
       title: '부산 제조업체',
-      image: 'https://images.pexels.com/photos/236705/pexels-photo-236705.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/installations/busan-factory.jpg',
       location: '부산광역시'
     },
     {
       id: 3,
       title: '대구 호텔',
-      image: 'https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/installations/daegu-hotel.jpg',
       location: '대구광역시'
     }
   ];
