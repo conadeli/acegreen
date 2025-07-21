@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { Play, Star, Quote } from 'lucide-react';
+import { Star, Quote } from 'lucide-react';
 
 const InterviewVideoSection = () => {
+  const videoId = "8bXxFQvw6CM";
+
   const testimonial = {
     name: '김○○ 사장님',
     business: '강남구 한식당',
@@ -23,21 +25,16 @@ const InterviewVideoSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* 비디오 영역 */}
           <div className="relative">
-            <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
-              <div className="aspect-video relative">
-                <img
-                  src={testimonial.videoThumbnail}
-                  alt={`${testimonial.name} 인터뷰`}
-                  className="w-full h-full object-cover"
+            <div className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
+              <div className="aspect-video">
+                <iframe
+                  src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&showinfo=0`}
+                  title={`${testimonial.name} 인터뷰`}
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                  <div className="bg-red-600 hover:bg-red-700 w-20 h-20 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 transform hover:scale-110 shadow-lg">
-                    <Play className="w-8 h-8 text-white ml-1" />
-                  </div>
-                </div>
-                <div className="absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm">
-                  인터뷰 영상
-                </div>
               </div>
             </div>
           </div>
