@@ -12,22 +12,22 @@ const TrialHighlightSection = () => {
   };
 
   const images = [
-    {
-      id: 1,
-      image: '/images/trial-highlight-1.jpg',
-      alt: '소규모 업장 설치 사례'
-    },
-    {
-      id: 2,
-      image: '/images/trial-highlight-2.jpg',
-      alt: '대규모 업장 설치 사례'
-    },
-    {
-      id: 3,
-      image: '/images/trial-highlight-3.jpg',
-      alt: '무료체험 진행 모습'
-    }
-  ];
+  {
+    id: 1,
+    image: '/images/gallery/대용량 스탠드형.png',
+    alt: '대용량 스탠드형'
+  },
+  {
+    id: 2,
+    image: '/images/gallery/소형스탠드형.png',
+    alt: '소형 스탠드형'
+  },
+  {
+    id: 3,
+    image: '/images/gallery/기존싱크대 사용형.png',
+    alt: '기존 싱크대 사용형'
+  }
+];
 
   const features = [
     {
