@@ -1,107 +1,107 @@
-import React from 'react';
-import { Play, Clock, CheckCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { Play, Star, Quote } from 'lucide-react';
 
-const TrialVideoSection = () => {
-  const scrollToTrialForm = () => {
-    const trialForm = document.querySelector('#trial-form');
-    if (trialForm) {
-      trialForm.scrollIntoView({ behavior: 'smooth' });
-    }
+const InterviewVideoSection = () => {
+  const videoId = "8bXxFQvw6CM"; // 같은 영상 또는 다른 인터뷰 영상 ID로 변경 가능
+  
+  const openYouTube = () => {
+    window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+  };
+
+  const testimonial = {
+    name: '김○○ 사장님',
+    business: '강남구 한식당',
+    content: '설치 후 폐기물 처리 비용이 70% 절약되었고, 냄새 문제도 완전히 해결되었습니다. 직원들도 일하기 편해졌고, 무료체험 후 바로 도입을 결정했습니다.',
+    rating: 5,
+    videoThumbnail: '/images/interview-thumbnail.jpg'
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">무료체험 안내 영상</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">업소사장님 인터뷰</h2>
           <p className="text-xl text-gray-600">
-            3분만 투자하여 무료체험 서비스에 대해 자세히 알아보세요
+            실제 사용하고 계신 사장님들의 생생한 후기를 들어보세요
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* 비디오 플레이어 영역 */}
+          {/* 비디오 영역 */}
           <div className="relative">
             <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
-              <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="bg-blue-600 hover:bg-blue-700 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 cursor-pointer transition-all duration-300 transform hover:scale-110 shadow-lg">
+              <div className="aspect-video relative cursor-pointer" onClick={openYouTube}>
+                <img
+                  src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                  alt={`${testimonial.name} 인터뷰`}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center hover:bg-opacity-20 transition-all duration-300">
+                  <div className="bg-red-600 hover:bg-red-700 w-20 h-20 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 transform hover:scale-110 shadow-lg">
                     <Play className="w-8 h-8 text-white ml-1" />
                   </div>
-                  <p className="text-white text-lg font-semibold">무료체험 안내 영상</p>
-                  <div className="flex items-center justify-center mt-2 text-gray-300">
-                    <Clock className="w-4 h-4 mr-1" />
-                    <span className="text-sm">3분 25초</span>
-                  </div>
+                </div>
+                <div className="absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm">
+                  인터뷰 영상
                 </div>
               </div>
-            </div>
-            
-            {/* 비디오 설명 */}
-            <div className="mt-6 bg-white rounded-lg p-6 shadow-md">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">이 영상에서 확인하실 수 있습니다</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                  무료체험 신청부터 설치까지의 전 과정
-                </li>
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                  실제 장비 작동 모습과 효과
-                </li>
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                  전문 상담원의 친절한 서비스
-                </li>
-              </ul>
             </div>
           </div>
 
-          {/* 안내 내용 */}
+          {/* 인터뷰 내용 */}
           <div className="space-y-8">
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">무료체험 서비스 특징</h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="bg-blue-100 rounded-full p-3 mr-4 flex-shrink-0">
-                    <span className="text-blue-600 font-bold text-lg">1</span>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">완전 무료 체험</h4>
-                    <p className="text-gray-600">설치부터 회수까지 모든 비용이 무료입니다</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-blue-100 rounded-full p-3 mr-4 flex-shrink-0">
-                    <span className="text-blue-600 font-bold text-lg">2</span>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">전문가 직접 방문</h4>
-                    <p className="text-gray-600">숙련된 전문 상담원이 직접 방문하여 설치 및 교육</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-blue-100 rounded-full p-3 mr-4 flex-shrink-0">
-                    <span className="text-blue-600 font-bold text-lg">3</span>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">7일간 체험</h4>
-                    <p className="text-gray-600">충분한 시간 동안 실제 효과를 직접 확인</p>
-                  </div>
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="flex items-center mb-6">
+                <Quote className="w-8 h-8 text-blue-600 mr-3" />
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">{testimonial.name}</h3>
+                  <p className="text-gray-600">{testimonial.business}</p>
                 </div>
               </div>
-            </div>
 
-            <div className="text-center">
-              <button 
-                onClick={scrollToTrialForm}
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
-              >
-                지금 무료체험 신청하기
-              </button>
+              <div className="flex items-center mb-4">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+
+              <blockquote className="text-lg text-gray-700 leading-relaxed italic">
+                "{testimonial.content}"
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        {/* 추가 후기 섹션 */}
+        <div className="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">더 많은 고객 후기</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="flex items-center mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-gray-700 mb-3">"설치 후 업무 환경이 완전히 달라졌어요."</p>
+              <p className="text-sm text-gray-500">- 서울 중식당 사장님</p>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="flex items-center mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-gray-700 mb-3">"비용 절약 효과가 정말 크네요."</p>
+              <p className="text-sm text-gray-500">- 인천 제조업체 대표님</p>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="flex items-center mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-gray-700 mb-3">"무료체험만으로도 효과를 확신했습니다."</p>
+              <p className="text-sm text-gray-500">- 광주 호텔 사장님</p>
             </div>
           </div>
         </div>
@@ -110,4 +110,4 @@ const TrialVideoSection = () => {
   );
 };
 
-export default TrialVideoSection;
+export default InterviewVideoSection;
