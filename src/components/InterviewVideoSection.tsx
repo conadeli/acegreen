@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Play, Star, Quote } from 'lucide-react';
 
 const InterviewVideoSection = () => {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const videoId = "8bXxFQvw6CM";
+
+  const handlePlayVideo = () => {
+    setIsVideoPlaying(true);
+  };
 
   const testimonial = {
     name: '김○○ 사장님',
@@ -26,15 +31,36 @@ const InterviewVideoSection = () => {
           {/* 비디오 영역 */}
           <div className="relative">
             <div className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
-              <div className="aspect-video">
-                <iframe
-                  src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&showinfo=0`}
-                  title={`${testimonial.name} 인터뷰`}
-                  className="w-full h-full"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+              <div className="aspect-video relative">
+                {!isVideoPlaying ? (
+                  <>
+                    <img
+                      src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                      alt={`${testimonial.name} 인터뷰`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                      <button
+                        onClick={handlePlayVideo}
+                        className="bg-red-600 hover:bg-red-700 w-20 h-20 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 transform hover:scale-110 shadow-lg"
+                      >
+                        <Play className="w-8 h-8 text-white ml-1" />
+                      </button>
+                    </div>
+                    <div className="absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm">
+                      인터뷰 영상
+                    </div>
+                  </>
+                ) : (
+                  <iframe
+                    src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&showinfo=0`}
+                    title={`${testimonial.name} 인터뷰`}
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                )}
               </div>
             </div>
           </div>
