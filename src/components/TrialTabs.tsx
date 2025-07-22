@@ -5,16 +5,18 @@ const TrialTabs = () => {
 
   const tabs = [
     { id: 'guide', name: '무료체험안내' },
-    { id: 'process', name: '무료체험절차' },
-    { id: 'status', name: '무료체험현황' },
-    { id: 'apply', name: '무료체험신청' }
+    { id: 'process', name: '무료체험절차' }
   ];
 
   const tabContent = {
-    guide: '/images/trial-guide.jpg',
-    process: '/images/trial-process.jpg',
-    status: '/images/trial-status.jpg',
-    apply: '/images/trial-apply.jpg'
+    guide: {
+      mobile: '/images/trial-guide-mobile.jpg',
+      desktop: '/images/trial-guide.jpg'
+    },
+    process: {
+      mobile: '/images/trial-process-mobile.jpg',
+      desktop: '/images/trial-process.jpg'
+    }
   };
 
   return (
@@ -28,12 +30,12 @@ const TrialTabs = () => {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex flex-wrap justify-center mb-8 bg-gray-100 p-2 rounded-lg max-w-2xl mx-auto">
+        <div className="flex justify-center mb-8 bg-gray-100 p-2 rounded-lg max-w-md mx-auto">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-6 py-3 rounded-md font-semibold transition-all duration-300 m-1 ${
+              className={`flex-1 px-6 py-3 rounded-md font-semibold transition-all duration-300 mx-1 ${
                 activeTab === tab.id
                   ? 'bg-blue-600 text-white shadow-md'
                   : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200'
@@ -46,10 +48,17 @@ const TrialTabs = () => {
 
         {/* Tab Content */}
         <div className="bg-gray-50 rounded-xl p-8">
+          {/* 모바일 이미지 */}
           <img
-            src={tabContent[activeTab as keyof typeof tabContent]}
+            src={tabContent[activeTab as keyof typeof tabContent].mobile}
             alt={tabs.find(tab => tab.id === activeTab)?.name}
-            className="w-full h-96 object-cover rounded-lg shadow-md"
+            className="w-full h-64 object-cover rounded-lg shadow-md block md:hidden"
+          />
+          {/* PC 이미지 */}
+          <img
+            src={tabContent[activeTab as keyof typeof tabContent].desktop}
+            alt={tabs.find(tab => tab.id === activeTab)?.name}
+            className="w-full h-96 object-cover rounded-lg shadow-md hidden md:block"
           />
         </div>
       </div>
