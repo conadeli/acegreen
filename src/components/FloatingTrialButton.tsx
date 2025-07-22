@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 const FloatingTrialButton = () => {
   const scrollToTrialForm = () => {
@@ -22,7 +22,7 @@ const FloatingTrialButton = () => {
           display: 'flex'
         }}
       >
-        <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
+        <CheckCircle className="w-4 h-4 mr-2 flex-shrink-0" />
         <span className="text-sm font-semibold">무료체험신청</span>
       </button>
     </div>
