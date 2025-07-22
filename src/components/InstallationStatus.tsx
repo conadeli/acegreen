@@ -83,9 +83,9 @@ const InstallationStatus = () => {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">설치 현황</h2>
-          <p className="text-xl text-gray-600">
-            전국 다양한 업체에서 이미 경험하고 있는 효과적인 솔루션
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">저희도 될까요??</h2>
+          <p className="text-xl font-bold text-orange-600">
+            실제 고객님들이 가장 많이 물어보시는 내용입니다
           </p>
         </div>
 
