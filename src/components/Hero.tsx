@@ -15,7 +15,7 @@ const Hero = () => {
         <img 
           src="/images/hero-bg.jpg"
           alt="산업장비"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-0"
         />
       </div>
 
