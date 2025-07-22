@@ -7,26 +7,26 @@ const ProductInfo = () => {
     {
       id: 1,
       name: '싱크대 설치형',
-      image: '/public/images/gallery/싱크대설치형.png',
-      specs: '/public/images/gallery/싱크대설치형설명.png'
+      image: '/images/gallery/싱크대설치형.png',
+      specs: '/images/gallery/싱크대설치형설명.png'
     },
     {
       id: 2,
       name: '스탠드형 AGL',
-      image: '/public/images/gallery/스탠드형AGL.png',
-      specs: '/public/images/gallery/스탠드형AGL설명.png'
+      image: '/images/gallery/스탠드형AGL.png',
+      specs: '/images/gallery/스탠드형AGL설명.png'
     },
     {
       id: 3,
       name: '스탠드형 AGS02',
-      image: '/public/images/gallery/스탠드형AGS02.png',
-      specs: '/public/images/gallery/스탠드형AGS02설명.png'
+      image: '/images/gallery/스탠드형AGS02.png',
+      specs: '/images/gallery/스탠드형AGS02설명.png'
     },
     {
       id: 4,
       name: '스탠드형 AG50',
-      image: '/public/images/gallery/스탠드형AG50.png',
-      specs: '/public/images/gallery/스탠드형AG50설명.png'
+      image: '/images/gallery/스탠드형AG50.png',
+      specs: '/images/gallery/스탠드형AG50설명.png'
     }
   ];
 
