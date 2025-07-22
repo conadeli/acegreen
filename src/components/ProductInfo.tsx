@@ -33,21 +33,21 @@ const ProductInfo = () => {
   const largeVolumeProducts = [
     {
       id: 1,
-      name: 'LV-500 대형처리기',
-      image: '/images/products/lv-500.jpg',
-      specs: '/images/products/lv-500-spec.jpg'
+      name: 'AP-50',
+      image: '/images/gallery/대용량.png',
+      specs: '/images/gallery/다량AP50설명.png'
     },
     {
       id: 2,
-      name: 'LV-1000 산업용처리기',
-      image: '/images/products/lv-1000.jpg',
-      specs: '/images/products/lv-1000-spec.jpg'
+      name: 'AP-100',
+      image: '/images/gallery/대용량.png',
+      specs: '/images/gallery/다량AP100설명.png'
     },
     {
       id: 3,
-      name: 'LV-2000 초대형처리기',
-      image: '/images/products/lv-2000.jpg',
-      specs: '/images/products/lv-2000-spec.jpg'
+      name: 'AP-150',
+      image: '/images/gallery/대용량.png',
+      specs: '/images/gallery/다량AP150설명.png'
     }
   ];
 
