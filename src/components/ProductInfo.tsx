@@ -96,13 +96,13 @@ const ProductInfo = () => {
               key={product.id}
               className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">{product.name}</h3>
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-96 object-cover rounded-lg shadow-md"
+                    className="w-full h-64 md:h-96 object-contain md:object-cover rounded-lg shadow-md"
                   />
                 </div>
                 <div>
@@ -110,7 +110,7 @@ const ProductInfo = () => {
                   <img
                     src={product.specs}
                     alt={`${product.name} 스펙`}
-                    className="w-full h-96 object-cover rounded-lg shadow-md"
+                    className="w-full h-64 md:h-96 object-contain md:object-cover rounded-lg shadow-md"
                   />
                 </div>
               </div>
