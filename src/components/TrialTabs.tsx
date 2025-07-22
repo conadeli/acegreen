@@ -21,7 +21,7 @@ const TrialTabs = () => {
 
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-1">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">무료체험 서비스</h2>
           <p className="text-xl text-gray-600">
@@ -30,7 +30,7 @@ const TrialTabs = () => {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex justify-center mb-8 bg-gray-100 p-2 rounded-lg max-w-md mx-auto">
+        <div className="flex justify-center mb-8 bg-gray-100 p-1 rounded-lg max-w-md mx-auto">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -47,7 +47,7 @@ const TrialTabs = () => {
         </div>
 
         {/* Tab Content */}
-        <div className="bg-gray-50 rounded-xl p-8">
+        <div className="bg-gray-50 rounded-xl p-1">
           {/* 모바일 이미지 */}
           <img
             src={tabContent[activeTab as keyof typeof tabContent].mobile}
