@@ -10,7 +10,7 @@ const InterviewVideoSection = () => {
   };
 
   const testimonial = {
-    name: '김○○ 사장님',
+    name: '박○○ 사장님',
     business: '강남구 한식당',
     content: '설치 후 폐기물 처리 비용이 70% 절약되었고, 냄새 문제도 완전히 해결되었습니다. 직원들도 일하기 편해졌고, 무료체험 후 바로 도입을 결정했습니다.',
     rating: 5,
