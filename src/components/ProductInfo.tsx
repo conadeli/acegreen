@@ -102,7 +102,7 @@ const ProductInfo = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-80 object-cover rounded-lg shadow-md"
+                    className="w-full h-96 object-cover rounded-lg shadow-md"
                   />
                 </div>
                 <div>
@@ -110,7 +110,7 @@ const ProductInfo = () => {
                   <img
                     src={product.specs}
                     alt={`${product.name} 스펙`}
-                    className="w-full h-80 object-cover rounded-lg shadow-md"
+                    className="w-full h-96 object-cover rounded-lg shadow-md"
                   />
                 </div>
               </div>
