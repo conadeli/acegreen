@@ -23,7 +23,13 @@ const Footer = () => {
 
         {/* 링크 섹션 */}
         <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8 mb-6 md:mb-8">
- 
+          <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
+            개인정보처리방침
+          </a>
+          <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
+            제휴 및 대리점 문의
+          </a>
+        </div>
 
         {/* 회사 정보 */}
         <div className="border-t border-gray-800 pt-6 md:pt-8">
