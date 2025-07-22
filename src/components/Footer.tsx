@@ -8,10 +8,13 @@ const Footer = () => {
         {/* 고객문의 섹션 */}
         <div className="text-center mb-6 md:mb-8">
           <h3 className="text-lg md:text-xl font-bold mb-3">고객문의</h3>
-          <div className="flex items-center justify-center text-gray-300 mb-2">
-            <Phone className="w-4 h-4 mr-2" />
-            <span className="text-lg md:text-xl font-semibold">010-8678-0842</span>
-          </div>
+          <a 
+            href="tel:010-8678-0842"
+            className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mb-2"
+          >
+            <Phone className="w-5 h-5 mr-2" />
+            010-8678-0842
+          </a>
           <div className="flex items-center justify-center text-gray-300">
             <Clock className="w-4 h-4 mr-2" />
             <span>평일: 09:00 ~ 18:00</span>
