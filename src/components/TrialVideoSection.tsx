@@ -21,10 +21,9 @@ const TrialVideoSection = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">업소사장님 인터뷰</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">업소 설치 및 구동</h2>
           <p className="text-xl text-gray-600">
-            실제 사용하고 계신 사장님들의 생생한 후기를 들어보세요
-          </p>
+            간단하게 설치하고 쉽게구동 확인하세요          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
