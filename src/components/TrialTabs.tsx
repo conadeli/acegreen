@@ -10,12 +10,12 @@ const TrialTabs = () => {
 
   const tabContent = {
     guide: {
-      mobile: '/images/trial-guide-mobile.jpg',
-      desktop: '/images/trial-guide.jpg'
+      mobile: '/images/gallery/무료체험신청1mo.png',
+      desktop: '/images/gallery/무료체험신청컴퓨터1.png'
     },
     process: {
-      mobile: '/images/trial-process-mobile.jpg',
-      desktop: '/images/trial-process.jpg'
+      mobile: '/images/gallery/무료체험신청2mo.png',
+      desktop: '/images/gallery/무료체험신청컴퓨터1.png'
     }
   };
 
