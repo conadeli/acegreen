@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
 {/* ✅ 블랙 오버레이 추가 */}
-      <div className="absolute inset-0 bg-black bg-opacity-20" />
+      <div className="absolute inset-0 bg-black bg-opacity-5" />
 
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="text-center max-w-4xl mx-auto px-4 py-4">
