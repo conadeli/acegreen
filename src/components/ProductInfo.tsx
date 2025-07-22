@@ -6,27 +6,27 @@ const ProductInfo = () => {
   const smallBusinessProducts = [
     {
       id: 1,
-      name: 'SB-100 소형처리기',
-      image: '/images/products/sb-100.jpg',
-      specs: '/images/products/sb-100-spec.jpg'
+      name: '싱크대 설치형',
+      image: '/public/images/gallery/싱크대설치형.png',
+      specs: '/public/images/gallery/싱크대설치형설명.png'
     },
     {
       id: 2,
-      name: 'SB-200 중형처리기',
-      image: '/images/products/sb-200.jpg',
-      specs: '/images/products/sb-200-spec.jpg'
+      name: '스탠드형 AGL',
+      image: '/public/images/gallery/스탠드형AGL.png',
+      specs: '/public/images/gallery/스탠드형AGL설명.png'
     },
     {
       id: 3,
-      name: 'SB-300 고급처리기',
-      image: '/images/products/sb-300.jpg',
-      specs: '/images/products/sb-300-spec.jpg'
+      name: '스탠드형 AGS02',
+      image: '/public/images/gallery/스탠드형AGS02.png',
+      specs: '/public/images/gallery/스탠드형AGS02설명.png'
     },
     {
       id: 4,
-      name: 'SB-400 프리미엄처리기',
-      image: '/images/products/sb-400.jpg',
-      specs: '/images/products/sb-400-spec.jpg'
+      name: '스탠드형 AG50',
+      image: '/public/images/gallery/스탠드형AG50.png',
+      specs: '/public/images/gallery/스탠드형AG50설명.png'
     }
   ];
 
