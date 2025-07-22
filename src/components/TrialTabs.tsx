@@ -54,12 +54,13 @@ const TrialTabs = () => {
             alt={tabs.find(tab => tab.id === activeTab)?.name}
             className="w-full h-64 object-cover rounded-lg shadow-md block md:hidden"
           />
-          {/* PC 이미지 */}
-          <img
-            src={tabContent[activeTab as keyof typeof tabContent].desktop}
-            alt={tabs.find(tab => tab.id === activeTab)?.name}
-            className="w-full h-96 object-cover rounded-lg shadow-md hidden md:block"
-          />
+          <div className="aspect-video hidden md:block">
+  <img
+    src={tabContent[activeTab as keyof typeof tabContent].desktop}
+    alt={tabs.find(tab => tab.id === activeTab)?.name}
+    className="w-full h-full object-cover rounded-lg shadow-md"
+  />
+</div>
         </div>
       </div>
     </section>
