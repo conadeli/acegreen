@@ -81,7 +81,7 @@ const InstallationStatus = () => {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">설치 현황</h2>
           <p className="text-xl text-gray-600">
@@ -89,7 +89,7 @@ const InstallationStatus = () => {
           </p>
         </div>
 
-        <div className="relative">
+        <div className="relative max-w-5xl mx-auto">
           {/* PC용 레이아웃 (3:1 비율, 2장) */}
           <div className="hidden md:block overflow-hidden rounded-xl">
             <div 
@@ -98,11 +98,11 @@ const InstallationStatus = () => {
             >
               {pcInstallations.map((installation) => (
                 <div key={installation.id} className="w-full flex-shrink-0">
-                  <div className="relative" style={{ aspectRatio: '3/1', height: '300px' }}>
+                  <div className="relative w-full" style={{ aspectRatio: '3/1', height: '350px' }}>
                     <img
                       src={installation.image}
                       alt={installation.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-xl"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
                       <div className="p-8 text-white">
