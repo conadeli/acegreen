@@ -9,7 +9,8 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[60vh] md:h-screen bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <section className="relative h-[60vh] md:h-screen text-white">
+{/* ✅ 배경 이미지 그대로 표시 */}
       <div className="absolute inset-0">
         <img 
           src="/images/hero-bg.jpg"
@@ -17,6 +18,10 @@ const Hero = () => {
           className="w-full h-full object-cover opacity-30"
         />
       </div>
+
+{/* ✅ 블랙 오버레이 추가 */}
+      <div className="absolute inset-0 bg-black bg-opacity-40" />
+
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="text-center max-w-4xl mx-auto px-4 py-4">
         <h1 className="text-3xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight text-center">
