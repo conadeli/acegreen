@@ -6,27 +6,27 @@ const InstallationGallery = () => {
 
   // 25개의 이미지 배열
   const galleryImages = [
-    '/images/gallery/install-01.jpg',
-    '/images/gallery/install-02.jpg',
-    '/images/gallery/install-03.jpg',
-    '/images/gallery/install-04.jpg',
-    '/images/gallery/install-05.jpg',
-    '/images/gallery/install-06.jpg',
-    '/images/gallery/install-07.jpg',
-    '/images/gallery/install-08.jpg',
-    '/images/gallery/install-09.jpg',
-    '/images/gallery/install-10.jpg',
-    '/images/gallery/install-11.jpg',
-    '/images/gallery/install-12.jpg',
-    '/images/gallery/install-13.jpg',
-    '/images/gallery/install-14.jpg',
-    '/images/gallery/install-15.jpg',
-    '/images/gallery/install-16.jpg',
-    '/images/gallery/install-17.jpg',
-    '/images/gallery/install-18.jpg',
-    '/images/gallery/install-19.jpg',
-    '/images/gallery/install-20.jpg',
-    '/images/gallery/install-21.jpg'
+    '/images/gallery/설치1.png',
+    '/images/gallery/설치2.png',
+    '/images/gallery/설치3.png',
+    '/images/gallery/설치4.png',
+    '/images/gallery/설치5.png',
+    '/images/gallery/설치6.png',
+    '/images/gallery/설치7.png',
+    '/images/gallery/설치8.png',
+    '/images/gallery/설치9.png',
+    '/images/gallery/설치10.png',
+    '/images/gallery/설치11.png',
+    '/images/gallery/설치12.png',
+    '/images/gallery/설치13.png',
+    '/images/gallery/설치14.png',
+    '/images/gallery/설치15.png',
+    '/images/gallery/설치16.png',
+    '/images/gallery/설치17.png',
+    '/images/gallery/설치18.png',
+    '/images/gallery/설치19.png',
+    '/images/gallery/설치20.png',
+    '/images/gallery/설치21.png'
   ];
 
   // PC용 페이지 구성 (3x3 그리드)
