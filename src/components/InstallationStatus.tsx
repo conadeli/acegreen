@@ -5,61 +5,61 @@ const InstallationStatus = () => {
   const [currentSlide, setCurrentSlide] = useState(0); // PC용
   const [currentMobileSlide, setCurrentMobileSlide] = useState(0); // 모바일용
 
-  // PC용 이미지 (3:1 비율, 2장)
-  const pcInstallations = [
-    {
-      id: 1,
-      title: '강남구 음식점',
-      image: '/images/installations/gangnam-restaurant.jpg',
-      location: '서울 강남구'
-    },
-    {
-      id: 2,
-      title: '부산 제조업체',
-      image: '/images/installations/busan-factory.jpg',
-      location: '부산광역시'
-    }
-  ];
+// PC용 이미지 (3:1 비율, 2장)
+const pcInstallations = [
+{
+id: 1,
+title: '일반문의1',
+image: '/images/gallery/문의PC1.png',
+location: '공간 | 가격 | 합법'
+},
+{
+id: 2,
+title: '일반문의2',
+image: '/images/gallery/문의PC1.png',
+location: '용량 | 체험 | 형태'
+}
+];
 
-  // 모바일용 이미지 (1:1 비율, 6장)
-  const mobileInstallations = [
-    {
-      id: 1,
-      title: '강남구 음식점',
-      image: '/images/installations/gangnam-restaurant.jpg',
-      location: '서울 강남구'
-    },
-    {
-      id: 2,
-      title: '부산 제조업체',
-      image: '/images/installations/busan-factory.jpg',
-      location: '부산광역시'
-    },
-    {
-      id: 3,
-      title: '대구 호텔',
-      image: '/images/installations/daegu-hotel.jpg',
-      location: '대구광역시'
-    },
-    {
-      id: 4,
-      title: '인천 카페',
-      image: '/images/installations/incheon-cafe.jpg',
-      location: '인천광역시'
-    },
-    {
-      id: 5,
-      title: '광주 펜션',
-      image: '/images/installations/gwangju-pension.jpg',
-      location: '광주광역시'
-    },
-    {
-      id: 6,
-      title: '대전 식당',
-      image: '/images/installations/daejeon-restaurant.jpg',
-      location: '대전광역시'
-    }
-  ];
+// 모바일용 이미지 (1:1 비율, 6장)
+const mobileInstallations = [
+{
+id: 1,
+title: '일반문의',
+image: '/images/gallery/문의모바일1.png',
+location: '공간문의'
+},
+{
+id: 2,
+title: '일반문의',
+image: '/images/gallery/문의모바일2.png',
+location: '가격문의'
+},
+{
+id: 3,
+title: '일반문의',
+image: '/images/gallery/문의모바일3.png',
+location: '합법문의'
+},
+{
+id: 4,
+title: '일반문의',
+image: '/images/gallery/문의모바일4.png',
+location: '처리용량문의'
+},
+{
+id: 5,
+title: '일반문의',
+image: '/images/gallery/문의모바일5.png',
+location: '무료체험문의'
+},
+{
+id: 6,
+title: '일반문의',
+image: '/images/gallery/문의모바일6.png',
+location: '설치형태문의'
+}
+];
 
   // PC용 슬라이드 네비게이션
   const nextPcSlide = () => {
