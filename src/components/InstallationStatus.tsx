@@ -9,15 +9,15 @@ const InstallationStatus = () => {
   const pcInstallations = [
     {
       id: 1,
-      title: '일반문의1',
-      image: '/images/gallery/문의PC1.png',
-      location: '공간 | 가격 | 합법'
+      title: '강남구 음식점',
+      image: '/images/installations/gangnam-restaurant.jpg',
+      location: '서울 강남구'
     },
     {
       id: 2,
-      title: '일반문의2',
-      image: '/images/gallery/문의PC1.png',
-      location: '용량 | 체험 | 형태'
+      title: '부산 제조업체',
+      image: '/images/installations/busan-factory.jpg',
+      location: '부산광역시'
     }
   ];
 
@@ -25,39 +25,39 @@ const InstallationStatus = () => {
   const mobileInstallations = [
     {
       id: 1,
-      title: '일반문의',
-      image: '/images/gallery/문의모바일1.png',
-      location: '공간문의'
+      title: '강남구 음식점',
+      image: '/images/installations/gangnam-restaurant.jpg',
+      location: '서울 강남구'
     },
     {
       id: 2,
-      title: '일반문의',
-      image: '/images/gallery/문의모바일2.png',
-      location: '가격문의'
+      title: '부산 제조업체',
+      image: '/images/installations/busan-factory.jpg',
+      location: '부산광역시'
     },
     {
       id: 3,
-      title: '일반문의',
-      image: '/images/gallery/문의모바일3.png',
-      location: '합법문의'
+      title: '대구 호텔',
+      image: '/images/installations/daegu-hotel.jpg',
+      location: '대구광역시'
     },
     {
       id: 4,
-      title: '일반문의',
-      image: '/images/gallery/문의모바일4.png',
-      location: '처리용량문의'
+      title: '인천 카페',
+      image: '/images/installations/incheon-cafe.jpg',
+      location: '인천광역시'
     },
     {
       id: 5,
-      title: '일반문의',
-      image: '/images/gallery/문의모바일5.png',
-      location: '무료체험문의'
+      title: '광주 펜션',
+      image: '/images/installations/gwangju-pension.jpg',
+      location: '광주광역시'
     },
     {
       id: 6,
-      title: '일반문의',
-      image: '/images/gallery/문의모바일6.png',
-      location: '설치형태문의'
+      title: '대전 식당',
+      image: '/images/installations/daejeon-restaurant.jpg',
+      location: '대전광역시'
     }
   ];
 
@@ -83,9 +83,9 @@ const InstallationStatus = () => {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">저희도 될까요??</h2>
-          <p className="text-xl font-bold text-orange-600">
-            실제 고객님들이 가장 많이 물어보시는 내용입니다
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">설치 현황</h2>
+          <p className="text-xl text-gray-600">
+            전국 다양한 업체에서 이미 경험하고 있는 효과적인 솔루션
           </p>
         </div>
 
@@ -98,13 +98,13 @@ const InstallationStatus = () => {
             >
               {pcInstallations.map((installation) => (
                 <div key={installation.id} className="w-full flex-shrink-0">
-                  <div className="relative w-full" style={{ aspectRatio: '3/1', height: '350px' }}>
+                  <div className="relative w-full rounded-xl overflow-hidden" style={{ aspectRatio: '3/1', height: '350px' }}>
                     <img
                       src={installation.image}
                       alt={installation.title}
-                      className="w-full h-full object-cover rounded-xl"
+                      className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
+                    <div className="absolute inset-0 bg-black bg-opacity-10 flex items-end">
                       <div className="p-8 text-white">
                         <h3 className="text-2xl font-bold mb-2">{installation.title}</h3>
                         <p className="text-lg opacity-90">{installation.location}</p>
@@ -151,13 +151,13 @@ const InstallationStatus = () => {
             >
               {mobileInstallations.map((installation) => (
                 <div key={installation.id} className="w-full flex-shrink-0">
-                  <div className="relative aspect-square">
+                  <div className="relative aspect-square rounded-xl overflow-hidden">
                     <img
                       src={installation.image}
                       alt={installation.title}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
+                    <div className="absolute inset-0 bg-black bg-opacity-20 flex items-end">
                       <div className="p-4 text-white">
                         <h3 className="text-lg font-bold mb-1">{installation.title}</h3>
                         <p className="text-sm opacity-90">{installation.location}</p>
