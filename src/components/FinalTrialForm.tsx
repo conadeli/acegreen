@@ -9,6 +9,8 @@ const FinalTrialForm = () => {
     phone: '',
     email: '',
     location: '',
+    preferredCallTimes: [] as string[],
+    additionalInquiry: '',
     termsAccepted: false,
     privacyAccepted: false
   });
@@ -20,6 +22,10 @@ const FinalTrialForm = () => {
     e.preventDefault();
     if (!formData.termsAccepted || !formData.privacyAccepted) {
       alert('필수 약관에 동의해주세요.');
+      return;
+    }
+    if (formData.preferredCallTimes.length === 0) {
+      alert('통화 선호시간을 최소 1개 이상 선택해주세요.');
       return;
     }
     
@@ -40,6 +46,9 @@ const FinalTrialForm = () => {
 - 연락처: ${formData.phone}
 - 이메일: ${formData.email}
 - 지역: ${formData.location}
+
+통화 선호시간: ${formData.preferredCallTimes.length > 0 ? formData.preferredCallTimes.join(', ') : '선택안함'}
+추가문의사항: ${formData.additionalInquiry || '없음'}
 
 약관 동의:
 - 이용약관 동의: ${formData.termsAccepted ? '동의' : '미동의'}
@@ -65,6 +74,8 @@ const FinalTrialForm = () => {
           phone: '',
           email: '',
           location: '',
+          preferredCallTimes: [],
+          additionalInquiry: '',
           termsAccepted: false,
           privacyAccepted: false
         });
@@ -84,6 +95,29 @@ const FinalTrialForm = () => {
       [name]: type === 'checkbox' ? checked : value
     });
   };
+
+  const handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleCallTimeChange = (time: string) => {
+    setFormData(prev => ({
+      ...prev,
+      preferredCallTimes: prev.preferredCallTimes.includes(time)
+        ? prev.preferredCallTimes.filter(t => t !== time)
+        : [...prev.preferredCallTimes, time]
+    }));
+  };
+
+  const callTimeOptions = [
+    '오전 8:00', '오전 9:00', '오전 10:00', '오전 11:00',
+    '오후 12:00(점심)', '오후 1:00', '오후 2:00', '오후 3:00', '오후 4:00', '오후 5:00',
+    '오후 6:00', '오후 7:00', '오후 8:00', '오후 9:00', '오후 10:00', '오후 11:00'
+  ];
 
   return (
     <section id="trial-form" className="py-20 bg-white">
@@ -138,7 +172,7 @@ const FinalTrialForm = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">이메일 *</label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">이메일</label>
                 <input
                   type="email"
                   name="email"
@@ -178,6 +212,40 @@ const FinalTrialForm = () => {
                 <option value="경남">경상남도</option>
                 <option value="제주">제주특별자치도</option>
               </select>
+            </div>
+
+            {/* 통화 선호시간 */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                통화 선호시간 *
+                <span className="text-gray-500 text-xs ml-2">중복선택 가능 (가능한시간 모두선택)</span>
+              </label>
+              <div className="grid grid-cols-3 md:grid-cols-4 gap-2 max-h-48 overflow-y-auto border border-gray-300 rounded-lg p-4">
+                {callTimeOptions.map((time) => (
+                  <label key={time} className="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={formData.preferredCallTimes.includes(time)}
+                      onChange={() => handleCallTimeChange(time)}
+                      className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mr-2"
+                    />
+                    <span className="text-sm text-gray-700">{time}</span>
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            {/* 추가문의사항 */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">추가문의사항</label>
+              <textarea
+                name="additionalInquiry"
+                value={formData.additionalInquiry}
+                onChange={handleTextareaChange}
+                rows={4}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
+                placeholder="궁금한 사항이나 요청사항을 자유롭게 작성해주세요"
+              />
             </div>
 
             {/* Terms and Privacy */}
