@@ -10,9 +10,9 @@ const TrialVideoSection = () => {
   };
 
   const testimonial = {
-    name: '김○○ 사장님',
-    business: '강남구 한식당',
-    content: '설치 후 폐기물 처리 비용이 70% 절약되었고, 냄새 문제도 완전히 해결되었습니다. 직원들도 일하기 편해졌고, 무료체험 후 바로 도입을 결정했습니다.',
+    name: '최○○ 사장님',
+    business: '안산 xx지산 식당',
+    content: ' 식당이 너무 바쁜데 일부러 아침일찍오셔서 설치해주시고 설치시간도 매우 짧아서 음식준비하는데 문제가 되지않았습니다. 설치간단하고 무료체험이 된다고해서 체험후 만족도가 높아서 바로 선택했습니다. 도입후 직원들이 너무 좋아합니다',
     rating: 5,
     videoThumbnail: '/images/interview-thumbnail.jpg'
   };
@@ -21,9 +21,9 @@ const TrialVideoSection = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">업소 설치 및 구동</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">업소 설치 이렇게 간단해?</h2>
           <p className="text-xl text-gray-600">
-            간단하게 설치하고 쉽게구동 확인하세요          </p>
+            식당 , 업소용 설치가 매우 간단합니다. 영상을통해 확인하세요          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -90,7 +90,7 @@ const TrialVideoSection = () => {
 
         {/* 추가 후기 섹션 */}
         <div className="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">더 많은 고객 후기</h3>
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">더 많은 설치및 사용 후기</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex items-center mb-3">
@@ -98,8 +98,8 @@ const TrialVideoSection = () => {
                   <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-3">"설치 후 업무 환경이 완전히 달라졌어요."</p>
-              <p className="text-sm text-gray-500">- 서울 중식당 사장님</p>
+              <p className="text-gray-700 mb-3">"간단한 설치 냄새없어져서 좋아요!!."</p>
+              <p className="text-sm text-gray-500">- 인천 xx식당 사장님</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex items-center mb-3">
@@ -107,8 +107,8 @@ const TrialVideoSection = () => {
                   <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-3">"비용 절약 효과가 정말 크네요."</p>
-              <p className="text-sm text-gray-500">- 인천 제조업체 대표님</p>
+              <p className="text-gray-700 mb-3">"마감때 음식물쓰레기 안버려서 좋아요."</p>
+              <p className="text-sm text-gray-500">- XX 한식부페 직원</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex items-center mb-3">
@@ -116,8 +116,8 @@ const TrialVideoSection = () => {
                   <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-3">"무료체험만으로도 효과를 확신했습니다."</p>
-              <p className="text-sm text-gray-500">- 광주 호텔 사장님</p>
+              <p className="text-gray-700 mb-3">"체험하고 선택했어요!!"</p>
+              <p className="text-sm text-gray-500">- 화성 xx 식당 사장님</p>
             </div>
           </div>
         </div>
