@@ -12,7 +12,7 @@ const ProductInfo = () => {
     },
     {
       id: 2,
-      name: '스탠드형 AGL',
+      name: '스탠드형 ASL',
       image: '/images/gallery/스탠드형ASL.png',
       specs: '/images/gallery/스탠드형ASL설명.png'
     },
